@@ -1,4 +1,4 @@
-class CartsController < ApplicationController
+ class CartsController < ApplicationController
 
   def show
   end
