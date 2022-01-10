@@ -28,6 +28,16 @@
          <li>
           <%= link_to 'About Us', :about %>
         </li>
+
+        <ul class="nav navbar-nav navbar-right">
+        <li style="display:flex;">
+          <% if current_user %>
+            <a>Signed in as <%= current_user.name %></a><%= link_to "Logout", '/logout' %>
+          <% else %>
+            <%= link_to 'Login', '/login' %><%= link_to 'Signup', '/signup' %>
+          <% end %>
+        </li>
+        </ul>
         
       </ul>
       <ul class="nav navbar-nav navbar-right">

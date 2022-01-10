@@ -18,10 +18,17 @@ class Admin::CategoriesController < ApplicationController
         render :new
       end
     end
+
+    # def destroy
+    #   @product = Product.find params[:id]
+    #   @product.destroy
+    #   redirect_to [:admin, :categories], notice: "Product deleted!"
+    # end
   
     def category_params
       params.require(:category).permit(
-        :name
+        :name,
+        :id
       )
     end
 end

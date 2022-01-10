@@ -1,0 +1,38 @@
+<div class="jumbotron">
+  <h1 class="display-5">Sign up</h1>
+  <p class="lead">Here at jungle we value our customers, sign up for an account for faster shipping, and weekly discounts!</p>
+  <%# <hr class="my-4">
+  <p> Enter your credentials below</p>
+  <div class="input-group mb-3">
+  <input type="email" class="form-control" placeholder="Enter your email" aria-label="User Email" aria-describedby="basic-addon2">
+</div>
+<div class="input-group mb-3">
+  <input type="password" class="form-control" placeholder="Enter your password" aria-label="User Password" aria-describedby="basic-addon1">
+  <div class="lead"> %>
+  <h4>Get Started</h4>
+
+<%= form_for :user, url: '/signup' do |f| %>
+  <div>
+  Name: <%= f.text_field :name %>
+  Email: <%= f.text_field :email %>
+  </div>
+  <div>
+  Password: <%= f.password_field :password %>
+    
+  Password Confirmation: <%= f.password_field :password_confirmation %>
+  </div>
+  <%= f.submit "Submit" %>
+</div>
+<% end %>
+  
+
+
+  <p class="lead">
+    <a class="btn btn-dark btn-lg" href="/" role="button">Back to Home</a>
+  </p>
+  
+</div>
+
+
+
+
