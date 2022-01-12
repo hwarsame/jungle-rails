@@ -146,6 +146,10 @@ GEM
       ffi (~> 1.0)
     rdoc (4.3.0)
     rmagick (4.2.4)
+    rspec (3.9.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
     rspec-core (3.9.3)
       rspec-support (~> 3.9.3)
     rspec-expectations (3.9.4)
@@ -224,6 +228,7 @@ DEPENDENCIES
   rails (= 4.2.11)
   rails_12factor
   rmagick
+  rspec
   rspec-rails (~> 3.5)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
